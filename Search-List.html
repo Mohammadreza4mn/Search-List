@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Search-List</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="min.js" defer></script>
+<style>
+  body{
+    background-color: black;
+  }
+  #search-bar{
+    text-align: center;
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    right: 19%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 20px 10px white;
+  }
+  #products{
+    display: none;
+}
+</style>
+</head>
+<body>
+  <!-- محل جستجو -->
+  <div id="search-bar">
+          <input type="text" id="input" onkeydown="addcode(event)" placeholder="...مبل، صندلی، گلدان و" autofocus>
+          <button onclick="search()"><i class="fa fa-search"></i></button>
+        <hr>
+        <p id="error">شما می‌توانید محصولی مانند مبل را در نزدیکه جستجو کنید سپس بر اساس مواردی مانند: رنگ و ابعاد منزل شما، سبک مورد علاقه‌تان و … مشاوره دریافت می‌کنید و بعد نزدیکه اقدام به جستجو از بین فروشگاه‌های موجود میکند تا محصولی متناسب با فضا و علاقه شما را پیدا کرده و به شما معرفی کند
+          </p>      
+  </div> 
+  <!-- لیست محصولات -->
+<ul id="products">
+  <li><a href="https://www.google.com/search?q=میز">میز</a></li>
+  <li><a href="https://www.google.com/search?q=لوازم تزیینی">لوازم تزیینی</a></li>
+  <li><a href="https://www.google.com/search?q=شلف">شلف</a></li>
+  <li><a href="https://www.google.com/search?q=دراور">دراور</a></li>
+  <li><a href="https://www.google.com/search?q=کتابخانه">کتابخانه</a></li>
+  <li><a href="https://www.google.com/search?q=پرده">پرده</a></li>
+  <li><a href="https://www.google.com/search?q=مبل">مبل</a></li>
+  <li><a href="https://www.google.com/search?q=صندلی">صندلی</a></li>
+  <li><a href="https://www.google.com/search?q=جاکفشی">جاکفشی</a></li>
+  <li><a href="https://www.google.com/search?q=ساعت">ساعت</a></li>
+  <li><a href="https://www.google.com/search?q=تابلو">تابلو</a></li>
+</ul>
+</body>
+</html>
