@@ -1,9 +1,8 @@
-var input, ul, li, result, i, txtValue, regex, regex2, keyboard, error;
-
 regex=/[^ا-ی\s]/;
 regex2=["تابلو" , "ساعت" ,"جاکفشی" , "صندلی" ,"مبل" , "پرده" ,"کتابخانه" , "دراور" ,"شلف" , "لوازم تزیینی" ,"میز"];
 
 function search(){
+  var input, ul, li, result, i, txtValue, regex, regex2, error;
   error=document.getElementById('error');
   input = document.getElementById("input").value;
   ul = document.getElementById("products");
@@ -34,7 +33,7 @@ for (i = 0; i < li.length; i++) {
 
 function addcode(event){
   // اضافه کردن رویداد به دکمه های کیبورد
-    keyboard=event.keyCode;
+    var keyboard=event.keyCode;
       if (keyboard == 13){
         search()
       };
