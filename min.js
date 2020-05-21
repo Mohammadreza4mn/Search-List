@@ -1,12 +1,11 @@
-regex=/[^ا-ی\s]/;
-regex2=["تابلو" , "ساعت" ,"جاکفشی" , "صندلی" ,"مبل" , "پرده" ,"کتابخانه" , "دراور" ,"شلف" , "لوازم تزیینی" ,"میز"];
-
 function search(){
   var input, ul, li, result, i, txtValue, regex, regex2, error;
-  error=document.getElementById('error');
-  input = document.getElementById("input").value;
-  ul = document.getElementById("products");
-  li = ul.getElementsByTagName("li");
+error=document.getElementById('error');
+input = document.getElementById("input").value;
+ul = document.getElementById("products");
+li = ul.getElementsByTagName("li");
+regex=/[^ا-ی\s]/;
+regex2=["تابلو" , "ساعت" ,"جاکفشی" , "صندلی" ,"مبل" , "پرده" ,"کتابخانه" , "دراور" ,"شلف" , "لوازم تزیینی" ,"میز"];
 if(input==""){
   error.innerHTML="😶خالی است😶<br>هنوز چیزی در قسمت بالا ننوشتی که برات جستجو کنم"
 }
@@ -32,9 +31,9 @@ for (i = 0; i < li.length; i++) {
 };
 
 function addcode(event){
-  // اضافه کردن رویداد به دکمه های کیبورد
-    var keyboard=event.keyCode;
-      if (keyboard == 13){
-        search()
-      };
-  };
+// اضافه کردن رویداد به دکمه های کیبورد
+var keyboard=event.keyCode;
+    if (keyboard == 13){
+      search()
+};
+};
