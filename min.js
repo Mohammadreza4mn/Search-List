@@ -1,12 +1,13 @@
 var input, ul, li, result, i, txtValue, regex, regex2, keyboard, error;
-error=document.getElementById('error');
-input = document.getElementById("input").value;
-ul = document.getElementById("products");
-li = ul.getElementsByTagName("li");
+
 regex=/[^ا-ی\s]/;
 regex2=["تابلو" , "ساعت" ,"جاکفشی" , "صندلی" ,"مبل" , "پرده" ,"کتابخانه" , "دراور" ,"شلف" , "لوازم تزیینی" ,"میز"];
 
 function search(){
+  error=document.getElementById('error');
+  input = document.getElementById("input").value;
+  ul = document.getElementById("products");
+  li = ul.getElementsByTagName("li");
 if(input==""){
   error.innerHTML="😶خالی است😶<br>هنوز چیزی در قسمت بالا ننوشتی که برات جستجو کنم"
 }
